@@ -15,6 +15,7 @@
 		71BE523B1F0B353300CE0026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BE52391F0B353300CE0026 /* LaunchScreen.storyboard */; };
 		71BE52461F0B353300CE0026 /* LTCustomTagsViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BE52451F0B353300CE0026 /* LTCustomTagsViewerTests.m */; };
 		71BE52511F0B353300CE0026 /* LTCustomTagsViewerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BE52501F0B353300CE0026 /* LTCustomTagsViewerUITests.m */; };
+		71BE52611F0B416A00CE0026 /* LTCustomTagsViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BE52601F0B416A00CE0026 /* LTCustomTagsViewer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		71BE524C1F0B353300CE0026 /* LTCustomTagsViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LTCustomTagsViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BE52501F0B353300CE0026 /* LTCustomTagsViewerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTCustomTagsViewerUITests.m; sourceTree = "<group>"; };
 		71BE52521F0B353300CE0026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71BE525F1F0B416A00CE0026 /* LTCustomTagsViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCustomTagsViewer.h; sourceTree = "<group>"; };
+		71BE52601F0B416A00CE0026 /* LTCustomTagsViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCustomTagsViewer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				71BE52391F0B353300CE0026 /* LaunchScreen.storyboard */,
 				71BE523C1F0B353300CE0026 /* Info.plist */,
 				71BE522B1F0B353300CE0026 /* Supporting Files */,
+				71BE525F1F0B416A00CE0026 /* LTCustomTagsViewer.h */,
+				71BE52601F0B416A00CE0026 /* LTCustomTagsViewer.m */,
 			);
 			path = LTCustomTagsViewer;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				71BE52331F0B353300CE0026 /* ViewController.m in Sources */,
 				71BE52301F0B353300CE0026 /* AppDelegate.m in Sources */,
 				71BE522D1F0B353300CE0026 /* main.m in Sources */,
+				71BE52611F0B416A00CE0026 /* LTCustomTagsViewer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

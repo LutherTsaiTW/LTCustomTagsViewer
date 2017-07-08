@@ -9,6 +9,31 @@
 #import "LTCustomTagsViewer.h"
 
 @implementation LTCustomTagsViewer
+@synthesize delegate;
+
+- (instancetype)initWithTags:(NSArray *)tagsArray {
+    self = [super init];
+    if (self) {
+        [self setBackgroundColor:[UIColor whiteColor]];
+    }
+    _style = LTCustomClassicStyle;
+    if (tagsArray != nil) {
+        _tagsArray = [[NSArray alloc] initWithArray:tagsArray copyItems:YES];
+    } else {
+        _tagsArray = [NSArray new];
+    }
+    return self;
+}
+
+#pragma mark - Consturct the UILayout
+- (void)setup {
+    
+}
+
+#pragma mark - IBAciton
+- (IBAction)touchOnTag:(UIButton *)sender {
+    [delegate clickOnTag:[NSDictionary new] selected:sender.selected];
+}
 
 #pragma mark - Calculate Width Of String
 - (CGFloat)widthOfString:(NSString *)string withFont:(UIFont *)font {
@@ -18,6 +43,11 @@
     } else {
         return 0;
     }
+}
+
+#pragma mark - Setter & Getter
+- (void)setTagsArray:(NSArray *)tagsArray {
+    _tagsArray = tagsArray;
 }
 
 @end

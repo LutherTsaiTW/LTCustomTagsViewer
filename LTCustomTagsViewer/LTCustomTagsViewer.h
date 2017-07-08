@@ -18,6 +18,7 @@ typedef NS_ENUM(NSInteger, LTCustomTagsViewStyle) {
 @end
 
 @interface LTCustomTagsViewer : UIView
+@property (nonatomic, assign) id delegate;
 /**
  Set style of LTCustomTagsViewStyle.
  */
@@ -26,4 +27,5 @@ typedef NS_ENUM(NSInteger, LTCustomTagsViewStyle) {
  Assign tags array for construct LTCustomTagsViewer. Only accepted NSString, any other type will be dropped.
  */
 @property (nonatomic, strong) NSArray *tagsArray;
+
 @end

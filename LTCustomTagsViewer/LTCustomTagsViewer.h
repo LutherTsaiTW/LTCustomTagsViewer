@@ -28,4 +28,9 @@ typedef NS_ENUM(NSInteger, LTCustomTagsViewStyle) {
  */
 @property (nonatomic, strong) NSArray *tagsArray;
 
+@property (nonatomic, copy) UIColor *tagColor;
+@property (nonatomic, copy) UIColor *tagTextColor;
+@property (nonatomic, copy) UIColor *tagSelectedColor;
+@property (nonatomic, copy) UIColor *tagTextSelectedColor;
+
 @end

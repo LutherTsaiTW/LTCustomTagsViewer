@@ -25,13 +25,23 @@
     return self;
 }
 
-#pragma mark - Consturct the UILayout
+#pragma mark - UILayout Setting
 - (void)setup {
     
 }
 
+- (void)changeLayoutAfterTouchButton:(UIButton *)sender {
+    if (sender.selected) {
+        [sender setBackgroundColor:_tagSelectedColor];
+    } else {
+        [sender setBackgroundColor:_tagColor];
+    }
+}
+
 #pragma mark - IBAciton
 - (IBAction)touchOnTag:(UIButton *)sender {
+    sender.selected = !sender.selected;
+    [self changeLayoutAfterTouchButton:sender];
     [delegate clickOnTag:[NSDictionary new] selected:sender.selected];
 }
 
@@ -50,4 +60,19 @@
     _tagsArray = tagsArray;
 }
 
+- (void)setTagColor:(UIColor *)tagColor {
+    _tagColor = tagColor;
+}
+
+- (void)setTagTextColor:(UIColor *)tagTextColor {
+    _tagTextColor = tagTextColor;
+}
+
+- (void)setTagSelectedColor:(UIColor *)tagSelectedColor {
+    _tagSelectedColor = tagSelectedColor;
+}
+
+- (void)setTagTextSelectedColor:(UIColor *)tagTextSelectedColor {
+    _tagTextSelectedColor = tagTextSelectedColor;
+}
 @end
